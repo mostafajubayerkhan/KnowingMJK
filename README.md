@@ -2,23 +2,43 @@
 
 Professional portfolio website showcasing the career and technical expertise of Mostafa Jubayer Khan, a Senior SQL Server & Azure Database Administrator with 9+ years of experience in the USA.
 
-## 🚀 Key Expertise
+## 🌟 Features
 
-- **High Availability & Disaster Recovery**: AlwaysOn Availability Groups, Clustering, Log Shipping, Replication.
-- **Cloud Solutions**: Azure SQL Database/Managed Instance, Data Factory, Site Recovery.
-- **Performance Tuning**: Query optimization, index management, SQL Profiler, Query Store.
-- **ETL & BI**: SSIS, SSRS, Power BI.
-- **Security**: Transparent Data Encryption (TDE), Firewall configurations.
+- **Interactive Dashboard**: 6-pillar stats overview capturing 9+ years of DBA expertise.
+- **Dynamic Neural Aura**: custom-coded particle system for a state-of-the-art visual feel.
+- **Glassmorphism UI**: Modern, premium design with blur effects and smooth transitions.
+- **Contact Form**: Functional form connected via **Formspree.io**.
+- **Meeting Booking**: Direct **Calendly** integration for one-click scheduling.
 
-## 🛠 Tech Stack
+## ⚙️ Configuration
 
-- **Frontend**: HTML5, Vanilla CSS3 (Glassmorphism), Lucide Icons.
-- **Interactions**: Vanilla JavaScript for smooth scrolling and neural aura animations.
+### ✉️ Contact Form (Formspree)
+The contact form is connected to Formspree for handling submissions without a backend.
+- **Endpoint**: `https://formspree.io/f/xzdayeqd`
+- **To update**: Change the `action` attribute in the `<form>` tag in `index.html`.
+
+### 📅 Meeting Calendar (Calendly)
+Direct links to Calendly are integrated into the "Get In Touch" section.
+- **Profile**: `https://calendly.com/knowingmjkhan`
+- **To update**: Search for the Calendly link in `index.html` and replace it with your new link.
+
+## 🌐 Deployment
+
+This project is deployed using **GitHub Pages**.
+- **Live URL**: [https://mostafajubayerkhan.github.io/KnowingMJK/](https://mostafajubayerkhan.github.io/KnowingMJK/)
+
+To deploy updates, simply push your changes to the `main` branch:
+```bash
+git add .
+git commit -m "Update portfolio features"
+git push origin main
+```
 
 ## 📂 Project Structure
 
-- `index.html`: The main page containing all professional information.
-- `style.css`: Custom CSS for a premium, responsive design.
+- `index.html`: Main page with professional content and structure.
+- `style.css`: Custom premium styles and animations.
+- `.gitignore`: Standard exclusion rules for a clean repository.
 
 ## 📬 Contact
 
