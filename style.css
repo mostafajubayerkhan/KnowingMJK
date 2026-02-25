@@ -65,6 +65,8 @@ ul {
     -webkit-backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 1rem;
+    box-shadow: 0 10px 30px -10px rgba(255, 255, 255, 0.05),
+        inset 0 0 15px rgba(255, 255, 255, 0.02);
 }
 
 /* Button Styles */
@@ -135,10 +137,39 @@ header nav {
 .nav-links a {
     font-weight: 500;
     color: var(--text-muted);
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.5rem;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    border: 1px solid transparent;
 }
 
 .nav-links a:hover {
-    color: var(--accent-blue);
+    color: var(--text-main);
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(56, 189, 248, 0.3);
+    box-shadow: 0 0 15px var(--accent-glow);
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -150%;
+    width: 50%;
+    height: 200%;
+    background: linear-gradient(to right,
+            transparent,
+            rgba(255, 255, 255, 0.2),
+            transparent);
+    transform: rotate(45deg);
+    transition: 0s;
+}
+
+.nav-links a:hover::after {
+    left: 150%;
+    transition: 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-toggle {
@@ -493,7 +524,9 @@ header nav {
 
 .contact-form-container {
     padding: 3rem;
+    box-shadow: 0 15px 40px -10px rgba(255, 255, 255, 0.05);
 }
+
 
 .contact-form {
     display: flex;
@@ -550,7 +583,9 @@ header nav {
     padding: 2.5rem;
     text-align: center;
     border: 2px dashed rgba(56, 189, 248, 0.2);
+    box-shadow: 0 15px 40px -10px rgba(255, 255, 255, 0.05);
 }
+
 
 .calendar-icon {
     width: 48px !important;
