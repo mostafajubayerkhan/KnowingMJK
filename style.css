@@ -1,12 +1,12 @@
 :root {
-    /* Color Palette - Premium Data Professional */
-    --bg-deep: #0F172A;
-    --bg-card: #1E293B;
+    /* Color Palette - Brighter Premium Data Professional */
+    --bg-deep: #1E293B;
+    --bg-card: #334155;
     --text-main: #F8FAFC;
-    --text-muted: #94A3B8;
+    --text-muted: #CBD5E1;
     --accent-blue: #38BDF8;
-    --accent-green: #10B981;
-    --accent-glow: rgba(56, 189, 248, 0.15);
+    --accent-green: #34D399;
+    --accent-glow: rgba(56, 189, 248, 0.25);
 
     /* Typography */
     --font-heading: 'Outfit', sans-serif;
@@ -407,11 +407,13 @@ header nav {
     grid-template-columns: 200px 1fr;
     gap: 2rem;
     transition: var(--transition-smooth);
+    box-shadow: 0 10px 30px -10px rgba(255, 255, 255, 0.05);
 }
 
 .exp-card:hover {
-    border-color: rgba(56, 189, 248, 0.4);
-    transform: translateX(10px);
+    border-color: rgba(56, 189, 248, 0.5);
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px -15px rgba(56, 189, 248, 0.2);
 }
 
 .exp-time {
